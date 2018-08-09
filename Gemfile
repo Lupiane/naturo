@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.5.0'
+ruby '2.4.3'
 
 gem 'bootsnap', require: false
 gem 'devise'
@@ -8,6 +8,8 @@ gem 'pg', '~> 0.21'
 gem 'puma'
 gem 'rails', '5.2.0'
 gem 'redis'
+# gem 'rmagick'
+gem 'lines-engine'
 
 gem 'autoprefixer-rails'
 gem 'bootstrap'
