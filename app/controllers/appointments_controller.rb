@@ -1,15 +1,18 @@
-class PackagesController < ApplicationController
+class AppointmentsController < ApplicationController
 
   def index
+  end
+
+  def show
   end
 
   def new
   end
 
-  def create
+  def first
   end
 
-  def show
+  def create
   end
 
   def edit
