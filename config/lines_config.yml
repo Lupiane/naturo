@@ -1,0 +1,59 @@
+###################################
+### GENERAL, HEADER & META TAGS ###
+###################################
+
+logo: ""                                                                        # Logo for your blog. Leave empty if you don't have one
+blog_name: "Naturo Blog"                                                              # Give your blog a meanungful name.
+title: "Le blog de Sophie"             # Give your blog a meaningful title. This is used for the HTML title attribute
+title_short: "Naturo"                                                            # Place the name of your blog or a short title here
+short_description: "a short description"         # Short description for your blog
+meta_description: "Naturo blog by Sophie"  # meta description tag
+meta_author: "Sophie Gaget"                                                         # meta tag for author
+keywords: "Sophie Gaget, Naturopathie"                                          # your keywords
+og_logo: "https://opoloo.github.io/lines-engine/assets/images/lines-logo.jpg"   # OpenGraph logo
+geo_position: "48.81; 2.22"                                                     # Geo tags for position and address
+geo_address: "Paris, France"                                              # Geo tags for position and address
+
+
+##############
+### SOCIAL ###
+##############
+
+# Your Twitter and Google+ profile URL
+# Leave empty if you don't want to display inside the footer
+twitter_url: 'http://twitter.com/lupiane'
+gplus_url:
+
+
+#################
+### ATOM FEED ###
+#################
+
+feed_title: "Le blog de Sophie"        # give your feed a title
+feed_logo: "https://opoloo.github.io/lines-engine/assets/images/lines-logo.jpg" # full URL to the feed logo. Aspect ratio should be 2:1
+feed_favicon: "https://opoloo.github.io/lines-engine/assets/images/favicon.ico" # full URL to the favicon. Aspect ratio should be 1:1
+
+
+#####################
+### APP SPECIFICS ###
+#####################
+
+refresh_sitemap: false
+
+hero_images: ["lines_default_01.png", "lines_default_02.png", "lines_default_03.png"]
+
+articles_per_page: 10 # Pagination: How many articles should be desplayed per page?
+
+# Your apps secret token. Generate a new one with 'rake secret' and paste it below
+secret_token: ENV['LINES_TOKEN']
+
+# Environment dependent configuration. Place your URLs here
+development:
+  host: "localhost:3000"
+  from_email: 'noreply@example.com'
+test:
+  host: "test.local"
+  from_email: 'noreply@example.com'
+production:
+  host: "blog.opoloo.com"
+  from_email: 'noreply@example.com'
