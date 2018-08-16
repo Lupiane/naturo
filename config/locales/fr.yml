@@ -1,0 +1,15 @@
+fr:
+  activerecord:
+    models:
+      appointment: "Consultation"
+      package: "Formule"
+    attributes:
+      appointment:
+        confirmed: "Confirmée"
+        date: "Date"
+      package:
+        title: "Intitulé"
+        price: "Prix"
+        description: "Description"
+
+  home:
