@@ -2,6 +2,8 @@ class PagesController < ApplicationController
   skip_before_action :authenticate_user!, only: [:home]
 
   def home
+    @packages = Package.all
+    @articles = Lines::Article.last(3)
   end
 
   def contact

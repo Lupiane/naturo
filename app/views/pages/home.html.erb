@@ -1,2 +1,38 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="text-center">
+  <h1>Sophie Gaget</h1>
+  <p>Naturopathe</p>
+</div>
+
+<div class="about">
+  <h2>Moi</h2>
+  <p>Naturopathe formée à ......</p>
+  <p>Ma, philosophie .....</p>
+  <p>Découvrez les formules que je vous propose...</p>
+</div>
+
+<div class="packages">
+  <h2>Formules</h2>
+  <ul>
+    <% @packages.each do |package|%>
+      <li><%= package.title %> - <%= package.price %></li>
+      <li><%= package.description %></li>
+    <% end %>
+  </ul>
+</div>
+
+<div class="articles">
+  <h2>Mes dernières publications</h2>
+  <ul>
+    <% @articles.each do |article|%>
+      <li><%= article.title %> </li>
+      <li><%= article.sub_title %></li>
+    <% end %>
+  </ul>
+</div>
+
+<div class="testimonials">
+  <h2>La parole à mes clients</h2>
+  <p>Témoignage 1</p>
+  <p>Témoignage 2</p>
+  <p>Témoignage 3</p>
+</div>
