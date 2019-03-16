@@ -14,7 +14,7 @@
   <h2>Formules</h2>
   <ul>
     <% @packages.each do |package|%>
-      <li><%= package.title %> - <%= package.price %></li>
+      <li><%= link_to package.title, package_path(package) %> - <%= package.price %></li>
       <li><%= package.description %></li>
     <% end %>
   </ul>
