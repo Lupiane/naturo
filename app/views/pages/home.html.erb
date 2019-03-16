@@ -14,15 +14,16 @@
   <h2>Formules</h2>
   <ul>
     <% @packages.each do |package|%>
-      <li><%= link_to package.title, package_path(package) %> - <%= package.price %></li>
+      <li><%= link_to package.title, package_path(package) %> - <%= package.price %>€</li>
       <li><%= package.description %></li>
       <br>
     <% end %>
+    <li><%= link_to "Voir toutes les formules / Prendre rendez-vous", packages_path %></li>
   </ul>
 </div>
 
 <div class="articles">
-  <h2>Mes dernières publications</h2>
+  <h2>Dernières publications sur le blog</h2>
   <ul>
     <% @articles.each do |article|%>
       <li><%= article.title %> </li>
@@ -40,4 +41,5 @@
   <p>Témoignage 1</p>
   <p>Témoignage 2</p>
   <p>Témoignage 3</p>
+  <%= link_to "Voir plus de témoignages", "#" %>
 </div>
