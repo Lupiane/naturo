@@ -16,6 +16,7 @@
     <% @packages.each do |package|%>
       <li><%= link_to package.title, package_path(package) %> - <%= package.price %></li>
       <li><%= package.description %></li>
+      <br>
     <% end %>
   </ul>
 </div>
@@ -26,7 +27,11 @@
     <% @articles.each do |article|%>
       <li><%= article.title %> </li>
       <li><%= article.sub_title %></li>
+      <li><%= link_to "Lire l'Article", lines.article_path(article) %></li>
+      <br>
     <% end %>
+    <li><%= link_to "Lire tous les articles", lines.articles_path %></li>
+
   </ul>
 </div>
 
