@@ -8,7 +8,10 @@ gem 'pg', '~> 0.21'
 gem 'puma'
 gem 'rails', '5.2.0'
 gem 'redis'
+
 gem 'lines-engine'
+# Solved error install ation https://stackoverflow.com/questions/39494672/rmagick-installation-cant-find-magickwand-h
+
 gem 'rails-i18n'
 gem 'devise-i18n'
 
