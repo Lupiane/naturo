@@ -1,4 +1,5 @@
 class PackagesController < ApplicationController
+skip_before_action :authenticate_user!, only: [:show, :index]
 
   def index
   end
@@ -10,6 +11,7 @@ class PackagesController < ApplicationController
   end
 
   def show
+    @package = Package.find(params[:id])
   end
 
   def edit
