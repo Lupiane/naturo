@@ -2,6 +2,8 @@ class PackagesController < ApplicationController
 skip_before_action :authenticate_user!, only: [:show, :index]
 
   def index
+    @packages = Package.all
+    #remember to add filter to show only "active" packages
   end
 
   def new
